@@ -33,4 +33,3 @@ The endpoints can then be tested via terminal or a web browser.
 
 ## Reference: 
 [Spring Boot in Action by Craig Walls](https://www.google.ie/books/edition/Spring_Boot_in_Action/9CiPrgEACAAJ?hl=en)
-
