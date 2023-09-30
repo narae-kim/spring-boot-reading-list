@@ -1,0 +1,41 @@
+#spring:
+#  profiles:
+#    active: dev
+
+logging:
+  level:
+    root: INFO
+
+management:
+  endpoints:
+    web:
+      base-path: "/inspect"
+      exposure:
+        include: "*"
+        exclude: "env"
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile:
+        - dev
+
+logging:
+  level:
+    root: DEBUG
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile:
+        - prod
+
+logging:
+  path: /tmp/
+  file: BookWorm.log
+  level:
+    root: WARN
